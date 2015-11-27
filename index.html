@@ -20,8 +20,16 @@ position: absolute;
 #area {
 position: relative;
 height: 350px;
-width:700px;
-background-color: green;
+background-color: pink;
+}
+#koff {
+font-size: 40px;
+color: black;
+}
+#hhead {
+font-size: 50px;
+color: red;
+font-family: serif;
 }
 #answer {
 font-size: 36 px;
@@ -45,10 +53,15 @@ color: red;
 <p id="area">
   
   
-  <input type="text" class="td" placeholder="Введите коэфф. проп." value="" id="td1" style="position: absolute; font-family: Arial; font-size: 40px;top:15px; left:15px; width: 510px">
-            <input type="text" class="td" placeholder="Введите величину деформации" value="" id="td2"style="position: absolute; font-family: Arial; font-size: 40px; top:65px; left:15px; width: 510px"></br>
-            <input type="button" value="Вычислить" onclick="det()" style="position: absolute; font-family: Arial; font-size: 80px; top:175px; left: 15px; width: 510px; height: 25px; font-family: Arial;">
-            <span style="position: absolute; font-family: Arial; font-size: 40px; top:215px; left: 15px;" id = "answer"> Ответ: </span>
+  <span style="position: absolute; top:0px; left:40px;" id = "hhead"> Вычисление силы упругости по закону Гука </span>
+<span style="position: absolute; top:60px; left:20px;" id = "koff"> Коэфф. проп. = </span>
+<input type="text" class="td" value="0" id="td1"style="top:60px; left:290px;">
+<span style="position: absolute; top:150px; left:20px;" id = "koff"> Величина деформации = </span>
+<input type="text" class="td" value="0" id="td2"style="top:150px; left:450px;">
+
+<input type="button" 
+          value="Вычислить" onclick="Fupr()" style="position: absolute; top:220px; left: 20px; width: 200px; height: 50px;">
+<span style="position: absolute; top:240px; left:250px;" id = "answer"> Ответ </span>	
 
 </p>
 
